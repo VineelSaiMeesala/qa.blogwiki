@@ -1,0 +1,21 @@
+body {
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+.FooterWrapper {
+  display: none;
+  width: 100%;
+  background-color: black;
+  height: 170px;
+  color: white;
+}
+.FooterWrapper .Logo {
+  transform: translate(2rem, 4rem);
+}
+.FooterWrapper .line {
+  transform: translate(2.5rem, 4rem);
+}
