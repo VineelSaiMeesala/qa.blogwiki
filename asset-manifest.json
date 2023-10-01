@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/qa.blogwiki/static/css/main.93032ede.css",
+    "main.js": "/qa.blogwiki/static/js/main.8724bc90.js",
+    "static/js/787.3fc59345.chunk.js": "/qa.blogwiki/static/js/787.3fc59345.chunk.js",
+    "index.html": "/qa.blogwiki/index.html",
+    "main.93032ede.css.map": "/qa.blogwiki/static/css/main.93032ede.css.map",
+    "main.8724bc90.js.map": "/qa.blogwiki/static/js/main.8724bc90.js.map",
+    "787.3fc59345.chunk.js.map": "/qa.blogwiki/static/js/787.3fc59345.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93032ede.css",
+    "static/js/main.8724bc90.js"
+  ]
+}
