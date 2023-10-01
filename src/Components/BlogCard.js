@@ -13,8 +13,16 @@ const BlogCard = (prop) => {
       <div id="BlogPara">
         <p>{prop.description}</p>
       </div>
-      <div id="BlogBtn">
-        <button>Read More..</button>
+      <div className="Blogfooter">
+        <div className="profile">
+          <img src={prop.img} alt="Logo" />
+        </div>
+        <div className="profileName">
+          <a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">ProfileName</a>
+        </div>
+        <div className="BlogBtn">
+        <button ><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Read More..</a></button>
+        </div>
       </div>
     </div>
   );

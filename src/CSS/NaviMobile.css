@@ -6,6 +6,9 @@
     background-color: aliceblue;
     overflow: hidden;
   }
+  a{
+    color: white;
+  }
   .Head-Wrapper {
     width: 100%;
     height: auto;

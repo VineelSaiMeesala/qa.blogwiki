@@ -20,14 +20,14 @@ var NavigationBar = function () {
       </div>
       <div>
         <div id="menu" className="menu">
-          <span>Home</span>
-          <span>News</span>
-          <span>Tech</span>
-          <span>Gadgets</span>
-          <span>Weather</span>
-          <span>About</span>
-          <span>Contact</span>
-          <span>Services</span>
+          <span><a href="./#" target="_blank" rel="noreferrer">Home</a></span>
+          <span><a href="">News</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Tech</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Gadgets</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Weather</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">About</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Contact</a></span>
+          <span><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Services</a></span>
         </div>
         <div className="search">
           <input
