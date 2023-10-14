@@ -7,6 +7,7 @@
   }
   a{
     color: white;
+    text-decoration: none; 
   }
   .Headear {
     transform: translateY(-1.3rem);
