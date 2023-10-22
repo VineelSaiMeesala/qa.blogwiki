@@ -5,6 +5,10 @@
     padding: 0px;
     margin: 0px;
   }
+  a{
+    color: white;
+    text-decoration: none; 
+  }
   .Headear {
     transform: translateY(-1.3rem);
     width: 100%;

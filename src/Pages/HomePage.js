@@ -2,57 +2,52 @@ import React from "react";
 import BlogCard from "../Components/BlogCard";
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
+import image1 from '../Img/Img1.png';
+import image2 from '../Img/Img2.jpeg';
+import image3 from '../Img/Img3.jpg';
+import image4 from '../Img/Img4.jpeg';
+import image5 from '../Img/Img5.jpg';
+
 import "../App.css";
 const HomePage = () => {
   const blogdata = [
     {
       id: 1,
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      title: "IPL 2023 news newsdejnkkjndj",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image1,
+    description:" try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
     },
+    ,
     {
       id: 2,
-      title: "Pubg news",
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
-    },
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image2,
+      description:"Sleep deprivation causes all sorts of challenges and problems. When one doesn’t get enough sleep one’s mind doesn’t work clearly. Studies have shown that after staying awake for 24 hours one’s ability to do simple math is greatly impaired. Driving tired has been shown to be as bad as driving drunk. Moods change, depression, anxiety, and mania can be induced by lack of sleep. As much as people try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
+      },
     {
       id: 3,
-      title: "Love news",
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor orem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor vresdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
-    },
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image3,
+      description:"Sleep deprivation causes all sorts of challenges and problems. When one doesn’t get enough sleep one’s mind doesn’t work clearly. Studies have shown that after staying awake for 24 hours one’s ability to do simple math is greatly impaired. Driving tired has been shown to be as bad as driving drunk. Moods change, depression, anxiety, and mania can be induced by lack of sleep. As much as people try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
+      },
     {
       id: 4,
-      title: "Love news",
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
-    },
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image4,
+      description:"Sleep deprivation causes all sorts of challenges and problems. When one doesn’t get enough sleep one’s mind doesn’t work clearly. Studies have shown that after staying awake for 24 hours one’s ability to do simple math is greatly impaired. Driving tired has been shown to be as bad as driving drunk. Moods change, depression, anxiety, and mania can be induced by lack of sleep. As much as people try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
+      },
     {
       id: 5,
-      title: "Love news",
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
-    },
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image5,
+      description:"Sleep deprivation causes all sorts of challenges and problems. When one doesn’t get enough sleep one’s mind doesn’t work clearly. Studies have shown that after staying awake for 24 hours one’s ability to do simple math is greatly impaired. Driving tired has been shown to be as bad as driving drunk. Moods change, depression, anxiety, and mania can be induced by lack of sleep. As much as people try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
+      },
     {
       id: 6,
-      title: "Love news",
-      img:
-        "https://th.bing.com/th/id/OIP.aRx3JR_qNEPtkCkl4aL_ZQHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      description:
-        "lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek lorem epsum dollor resdrek"
-    }
+      title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
+      img:image3,
+      description:"Sleep deprivation causes all sorts of challenges and problems. When one doesn’t get enough sleep one’s mind doesn’t work clearly. Studies have shown that after staying awake for 24 hours one’s ability to do simple math is greatly impaired. Driving tired has been shown to be as bad as driving drunk. Moods change, depression, anxiety, and mania can be induced by lack of sleep. As much as people try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
+      }
   ];
   const elements = blogdata.map((item) => {
     return (
