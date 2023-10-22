@@ -7,7 +7,7 @@ body {
   background-color: transparent;
 }
 .FooterWrapper {
-  display: none;
+  /* display: none; */
   width: 100%;
   background-color: black;
   height: 170px;
