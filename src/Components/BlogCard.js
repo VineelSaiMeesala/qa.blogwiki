@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/BlogCardWindow.css";
 import "../CSS/BlogcardMobile.css";
+import { Link } from "react-router-dom";
 const BlogCard = (prop) => {
   return (
     <div className="BlogCard">
@@ -21,7 +22,7 @@ const BlogCard = (prop) => {
           <a href="https://www.blogwiki.in/">ProfileName</a>
         </div>
         <div className="BlogBtn">
-        <button ><a href="./BlogPage">Read More..</a></button>
+        <button ><Link to='/BlogPage'>Read More...</Link></button>
         </div>
       </div>
     </div>
