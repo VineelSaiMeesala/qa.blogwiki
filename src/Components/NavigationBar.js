@@ -1,13 +1,6 @@
 import "../CSS/NaviWindow.css";
 import "../CSS/NaviMobile.css";
-function DarkModeCall() {}
-function Darkmode() {
-  return (
-    <div className="DarkModeWrapper">
-      <button onClick={DarkModeCall}>Dark Mode</button>
-    </div>
-  );
-}
+import { Link } from "react-router-dom";
 var NavigationBar = function () {
   return (
     <div className="Head-Wrapper">
@@ -20,14 +13,15 @@ var NavigationBar = function () {
       </div>
       <div>
         <div id="menu" className="menu">
-          <span>Home</span>
-          <span>News</span>
-          <span>Tech</span>
-          <span>Gadgets</span>
-          <span>Weather</span>
-          <span>About</span>
-          <span>Contact</span>
-          <span>Services</span>
+          <span><Link to='/qa.blogwiki'>Home</Link></span>
+          <span><Link to='/BlogPage'>News</Link></span>
+          <span><Link to='/qa.blogwiki'>Tech</Link></span>
+          <span><Link to='/BlogPage'>Gadgets</Link></span>
+          <span><Link to='/qa.blogwiki'>Weather</Link></span>
+          <span><Link to='/BlogPage'>About</Link></span>
+          <span><Link to='/qa.blogwiki'>Contact</Link></span>
+          <span><Link to='/BlogPage'>Services</Link></span>
+          <span><Link to='/BlogPage'>TestLink</Link></span>
         </div>
         <div className="search">
           <input
@@ -42,7 +36,6 @@ var NavigationBar = function () {
         <div id="Social" className="Social">
           <p>APP Icons here</p>
         </div>
-        <Darkmode />
       </div>
       <div className="MobileNav">
         <div id="btn1" className="btn" onClick={clicked}>

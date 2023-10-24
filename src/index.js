@@ -1,13 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import "./index.css";
+import Error from './Pages/Error'
+import BlogPage from './Pages/BlogPage'
+import App from './App'
 
+const router = createBrowserRouter([
+  {
+    path: "/qa.blogwiki",
+    element: <App />,
+    errorElement: <Error />
+  },
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />
+  },
+  {
+    path: "/BlogPage",
+    element: <BlogPage />,
+    errorElement: <Error />
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
@@ -15,3 +36,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// reportWebVitals(console.log);

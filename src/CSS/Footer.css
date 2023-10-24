@@ -7,15 +7,156 @@ body {
   background-color: transparent;
 }
 .FooterWrapper {
-  display: none;
   width: 100%;
   background-color: black;
+  box-sizing: border-box;
   height: 170px;
   color: white;
 }
-.FooterWrapper .Logo {
-  transform: translate(2rem, 4rem);
+.FootHeadear{
+  width: 19%;
+  height: 100%;
+  box-sizing: border-box;
+  
 }
-.FooterWrapper .line {
-  transform: translate(2.5rem, 4rem);
+.FootLogo{
+ position: relative;
+ top: 35%;
+ left: 20px;
+ box-sizing: border-box;
+}
+.FootLogo > p{
+  position: relative;
+  top: -20px;
+  font-size: 10px;
+ }
+ .Footline{
+  width: 1.5px;
+  height: 3.5rem;
+  background-color: white;
+  position: relative;
+  left: 130px;
+  top: -19px;
+ }
+ .SearchWrapper{
+  width: 25%;
+  height: 100%;
+  position: relative;
+  top: -170px;
+  left: 220px;
+  box-sizing: border-box;
+ }
+ .SearchWrapper > input{
+  position: relative;
+  top: 70px;
+  left: 20px;
+  width: 70%;
+  height:30px;
+  border: none;
+  border-radius: 15px;
+ }
+ .SearchWrapper > input:focus{
+  outline: none;
+ }
+ .SearchWrapper > button{
+  position: relative;
+  top: 70px;
+  left: -8px;
+  border: none;
+  height:32px;
+  border-radius: 15px;
+  cursor: pointer;
+ }
+ .Subbutton:hover {
+  background-color: #276ecf;
+  color: #f6f6f6; /* Change the background color on hover */
+}
+ .CopyrightWrapper{
+  width: 25%;
+  height: 100%;
+  position: relative;
+  top: -340px;
+  left: 570px;
+  box-sizing: border-box;
+ }
+ .CopyrightWrapper >p{
+  position: relative;
+  bottom: -80px;
+  left: 40px;
+  box-sizing: border-box;
+ }
+ .SocailProfileWrapper{
+  width: 270px;
+  height: 32px;
+  position: relative;
+  bottom: -70px;
+  left: 56px;
+  box-sizing: border-box;
+  display: flex;
+ }
+ .SocailProfileWrapper > p{
+  position: relative;
+  bottom: 10px;
+  margin-right: 5px;
+ }
+.FooterSocial{
+  width: 30px;
+  height: 32px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.FooterSocial > img{
+  width: 100%;
+  height: 100%;
+}
+#twitter>img{
+  border-radius: 5px;
+  background-color: wheat;
+}
+.FooterOptionWrapper{
+  width: 300px;
+  height: 100%;
+  position: relative;
+  bottom: 510px;
+  right: -942px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.OptionLine{
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  left: 5px;
+}
+.OptioninnerWrapper{
+  padding: 10px;
+}
+.LinkWrapper5{
+  position: relative;
+  left: 5px;
+}
+.LinkWrapper6{
+  position: relative;
+  left: 5px;
+}
+.LinkWrapper8{
+  position: relative;
+  left: 14px;
+}.LinkWrapper9{
+  position: relative;
+  left: 29px;
+}
+.BackTopWrapper{
+  width: 100px;
+  height: 100%;
+  position: relative;
+  bottom: 680px;
+  right: -1342px;
+  font-weight: bolder;
+}
+.BackTopWrapper > div{
+  transform: rotate(90deg);
+  position: relative;
+  top: 80px;
+  cursor: pointer;
 }

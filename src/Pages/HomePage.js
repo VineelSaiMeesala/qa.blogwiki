@@ -1,12 +1,11 @@
 import React from "react";
 import BlogCard from "../Components/BlogCard";
-import NavigationBar from "../Components/NavigationBar";
-import Footer from "../Components/Footer";
 import image1 from '../Img/Img1.png';
 import image2 from '../Img/Img2.jpeg';
 import image3 from '../Img/Img3.jpg';
 import image4 from '../Img/Img4.jpeg';
 import image5 from '../Img/Img5.jpg';
+import MainLayout from '../Layouts/MainLayout'
 
 import "../App.css";
 const HomePage = () => {
@@ -17,7 +16,6 @@ const HomePage = () => {
       img:image1,
     description:" try to do without enough sleep it is a wonder more crazy things don’t happen in this world."
     },
-    ,
     {
       id: 2,
       title: "You Only Live Once, But If You Do It Right, Once Is Enough. - (Mae West)",
@@ -60,15 +58,9 @@ const HomePage = () => {
     );
   });
   return (
-    <div className="App">
-      <div className="Nav">
-        <NavigationBar />
-      </div>
+    <MainLayout>
       <div className="body">{elements}</div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+    </MainLayout>
   );
 };
 
