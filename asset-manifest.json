@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/qa.blogwiki/static/css/main.04face9f.css",
-    "main.js": "/qa.blogwiki/static/js/main.058e19bf.js",
+    "main.css": "/qa.blogwiki/static/css/main.450142ac.css",
+    "main.js": "/qa.blogwiki/static/js/main.2332b87c.js",
     "static/js/787.3fc59345.chunk.js": "/qa.blogwiki/static/js/787.3fc59345.chunk.js",
     "static/media/Img5.jpg": "/qa.blogwiki/static/media/Img5.e1556c9c7a76c11e48c5.jpg",
     "static/media/Img1.png": "/qa.blogwiki/static/media/Img1.606eda050495564b4417.png",
     "static/media/Img4.jpeg": "/qa.blogwiki/static/media/Img4.ed448e211d16bbf424b7.jpeg",
     "static/media/Img2.jpeg": "/qa.blogwiki/static/media/Img2.a2ca1272589398d59a43.jpeg",
     "static/media/Img3.jpg": "/qa.blogwiki/static/media/Img3.b5599f35188adf8e474f.jpg",
+    "static/media/instagram.png": "/qa.blogwiki/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/twitter (1).png": "/qa.blogwiki/static/media/twitter (1).e58e4997ef85cbd7054c.png",
+    "static/media/youtube.png": "/qa.blogwiki/static/media/youtube.bc069a2b5e1ecdb5e06e.png",
+    "static/media/linkedin.png": "/qa.blogwiki/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/qa.blogwiki/index.html",
-    "main.04face9f.css.map": "/qa.blogwiki/static/css/main.04face9f.css.map",
-    "main.058e19bf.js.map": "/qa.blogwiki/static/js/main.058e19bf.js.map",
+    "main.450142ac.css.map": "/qa.blogwiki/static/css/main.450142ac.css.map",
+    "main.2332b87c.js.map": "/qa.blogwiki/static/js/main.2332b87c.js.map",
     "787.3fc59345.chunk.js.map": "/qa.blogwiki/static/js/787.3fc59345.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04face9f.css",
-    "static/js/main.058e19bf.js"
+    "static/css/main.450142ac.css",
+    "static/js/main.2332b87c.js"
   ]
 }
