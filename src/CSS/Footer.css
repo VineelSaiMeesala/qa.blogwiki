@@ -120,13 +120,13 @@ body {
   bottom: 510px;
   right: -942px;
   box-sizing: border-box;
+  font-size: 16px;
 }
 .OptionLine{
   padding: 10px;
   position: relative;
   top: 20px;
   left: 5px;
-  font-weight: bolder;
 }
 .OptioninnerWrapper{
   padding: 10px;
