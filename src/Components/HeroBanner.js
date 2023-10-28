@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import '../CSS/HeroBanner.css';
 import image1 from '../ImageRepoSRC/Women2.jpeg';
 import image2 from '../ImageRepoSRC/Women17.jpeg';
-
 const HeroBanner = () => {
   const [newsData, setNewsData] = useState([]);
   const [currentNews, setCurrentNews] = useState(0);
