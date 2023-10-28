@@ -1,12 +1,15 @@
 import React from "react";
-import image1 from "../Img/Img3.jpg";
 import MainLayout from "../Layouts/MainLayout";
+import "../CSS/BlogPage.css";
+import image1 from '../ImageRepoSRC/Women2.jpeg'
 const blogPage = () => {
   return (
     <MainLayout>
-      <h1>BlogPage</h1>
-      <p>Test paragraph</p>
-      <img src={image1} alt="" />
+      <div className="BpMainWrapper">
+        <h1>BlogPage</h1>
+        <p>Test paragraph</p>
+        <img src={image1} alt="Women" />
+      </div>
     </MainLayout>
   );
 };

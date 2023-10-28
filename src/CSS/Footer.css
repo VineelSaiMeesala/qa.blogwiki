@@ -69,7 +69,7 @@ body {
  }
  .Subbutton:hover {
   background-color: #276ecf;
-  color: #f6f6f6; /* Change the background color on hover */
+  color: #f6f6f6; 
 }
  .CopyrightWrapper{
   width: 25%;
@@ -125,7 +125,7 @@ body {
 .OptionLine{
   padding: 10px;
   position: relative;
-  top: 20px;
+  top: 35px;
   left: 5px;
 }
 .OptioninnerWrapper{

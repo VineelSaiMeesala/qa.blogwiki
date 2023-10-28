@@ -7,7 +7,6 @@ import "./index.css";
 import Error from './Pages/Error'
 import BlogPage from './Pages/BlogPage'
 import App from './App'
-
 const router = createBrowserRouter([
   {
     path: "/dev.blogwiki",
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
     path: "/BlogPage",
     element: <BlogPage />,
     errorElement: <Error />
-  },
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

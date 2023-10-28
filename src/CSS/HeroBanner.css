@@ -1,0 +1,42 @@
+/* HeroBanner.css */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  top: -21px;
+  height: 710px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.5s;
+  width: 100%; /* Set the content to full width */
+}
+
+.hero-content img {
+  max-width: 50%;
+  margin-right: 20px;
+  border: 2px solid #fff;
+}
+
+.news-details {
+  flex: 1;
+}
+
+.news-details h1 {
+  font-size: 24px;
+}
+
+.read-more {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

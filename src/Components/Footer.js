@@ -20,6 +20,7 @@ const Footer = () => {
     // Simulate a subscription process (you should replace this with a real backend call)
     console.log(`Subscribed with email: ${email}`);
     setSubscribed(true);
+    setEmail("");
   };
   return (
     <div className="FooterWrapper">
