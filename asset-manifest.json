@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/qa.blogwiki/static/css/main.d48fdb96.css",
-    "main.js": "/qa.blogwiki/static/js/main.f874f34f.js",
+    "main.js": "/qa.blogwiki/static/js/main.b4dd97f1.js",
     "static/js/787.3fc59345.chunk.js": "/qa.blogwiki/static/js/787.3fc59345.chunk.js",
     "static/media/Women16.jpeg": "/qa.blogwiki/static/media/Women16.2f77178e1b2c648f8e41.jpeg",
     "static/media/Women17.jpeg": "/qa.blogwiki/static/media/Women17.59d2357a96459d30b6ba.jpeg",
@@ -16,11 +16,11 @@
     "static/media/linkedin.png": "/qa.blogwiki/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/qa.blogwiki/index.html",
     "main.d48fdb96.css.map": "/qa.blogwiki/static/css/main.d48fdb96.css.map",
-    "main.f874f34f.js.map": "/qa.blogwiki/static/js/main.f874f34f.js.map",
+    "main.b4dd97f1.js.map": "/qa.blogwiki/static/js/main.b4dd97f1.js.map",
     "787.3fc59345.chunk.js.map": "/qa.blogwiki/static/js/787.3fc59345.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d48fdb96.css",
-    "static/js/main.f874f34f.js"
+    "static/js/main.b4dd97f1.js"
   ]
 }
