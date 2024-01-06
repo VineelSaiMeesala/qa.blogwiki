@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../CSS/HeroBanner.css';
 import image1 from '../ImageRepoSRC/Women2.jpeg';
 import image2 from '../ImageRepoSRC/Women17.jpeg';
-
+import { Link } from "react-router-dom";
 const HeroBanner = () => {
   const [newsData, setNewsData] = useState([]);
   const [currentNews, setCurrentNews] = useState(0);
@@ -51,9 +51,10 @@ const HeroBanner = () => {
           <div className="news-details">
             <h1>{newsData[currentNews].title}</h1>
             <p>{newsData[currentNews].description}</p>
-            <a href="/BlogPage" className="read-more">
+            {/* <a href="/BlogPage" className="read-more">
               Read More
-            </a>
+            </a> */}
+            <Link to='/BlogPage' className="read-more">Read More</Link>
           </div>
         </div>
       )}
