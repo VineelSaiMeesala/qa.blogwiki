@@ -1,3 +1,9 @@
+:root {
+  --Flagon-socail: -210px;
+  --Flagon-Option:345px;
+  --Flagoff-socail:-390px;
+  --Flagoff-Option:510px;
+}
 body {
   overflow-y: scroll;
   box-sizing: border-box;
@@ -38,7 +44,7 @@ body {
   left: 130px;
   top: -19px;
  }
- .SearchWrapper{
+ .FNewsLetter{
   width: 25%;
   height: 100%;
   position: relative;
@@ -46,7 +52,7 @@ body {
   left: 220px;
   box-sizing: border-box;
  }
- .SearchWrapper > input{
+ .FNewsLetter > input{
   position: relative;
   top: 70px;
   left: 20px;
@@ -55,10 +61,10 @@ body {
   border: none;
   border-radius: 15px;
  }
- .SearchWrapper > input:focus{
+ .FNewsLetter > input:focus{
   outline: none;
  }
- .SearchWrapper > button{
+ .FNewsLetter > button{
   position: relative;
   top: 70px;
   left: -8px;
@@ -75,7 +81,7 @@ body {
   width: 25%;
   height: 100%;
   position: relative;
-  top: -340px;
+  top: var(--Flagoff-socail);
   left: 570px;
   box-sizing: border-box;
  }
@@ -89,7 +95,7 @@ body {
   width: 270px;
   height: 32px;
   position: relative;
-  bottom: -70px;
+  bottom: -90px;
   left: 56px;
   box-sizing: border-box;
   display: flex;
@@ -117,7 +123,7 @@ body {
   width: 300px;
   height: 100%;
   position: relative;
-  bottom: 510px;
+  bottom: var(--Flagoff-Option);
   right: -942px;
   box-sizing: border-box;
   font-size: 16px;
@@ -159,4 +165,17 @@ body {
   position: relative;
   top: 80px;
   cursor: pointer;
+}
+.Version{
+  position: relative;
+  right: -64px;
+  top: 75px;
+}
+.FErrorMessage{
+  color: #4e0303;
+  transform: translate(20px,60px);
+}
+.FThanksMessage{
+  color: #f6f6f6;
+  transform: translate(20px,60px);
 }

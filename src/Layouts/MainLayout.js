@@ -9,11 +9,11 @@ function App({ children }) {
         <div className="NavigationBar">
           <NavigationBar />
         </div>
-        <div className="Aside">
-          <Aside />
-        </div>
         <div className="MainContent">
           <div>{children}</div>
+        </div>
+        <div className="Aside">
+          <Aside />
         </div>
         <div className="Footer">
           <Footer />
