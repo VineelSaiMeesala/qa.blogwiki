@@ -1,0 +1,17 @@
+ErrorPage.css
+.error-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .error-page h1 {
+    font-size: 3rem;
+    color: #ff0000;
+  }
+  
+  .error-page p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  

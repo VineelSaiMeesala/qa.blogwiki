@@ -1,11 +1,24 @@
 import NavigationBar from "../Components/NavigationBar";
-import Footer from '../Components/Footer';
-function App({children}) {
+import Footer from "../Components/Footer";
+import Aside from "../Components/AsideLeft";
+import "../CSS/MainLayout.css";
+function App({ children }) {
   return (
-    <div>
-      <NavigationBar />
-      <div>{children}</div>
-      <Footer />
+    <div className="App">
+      <div className="container">
+        <div className="NavigationBar">
+          <NavigationBar />
+        </div>
+        <div className="Aside">
+          <Aside />
+        </div>
+        <div className="MainContent">
+          <div>{children}</div>
+        </div>
+        <div className="Footer">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

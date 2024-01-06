@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/BlogCardWindow.css";
 import "../CSS/BlogcardMobile.css";
+import { Link } from "react-router-dom";
 const BlogCard = (prop) => {
   return (
     <div className="BlogCard">
@@ -18,10 +19,10 @@ const BlogCard = (prop) => {
           <img src={prop.img} alt="Logo" />
         </div>
         <div className="profileName">
-          <a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">ProfileName</a>
+          <a href="https://www.blogwiki.in/">ProfileName</a>
         </div>
         <div className="BlogBtn">
-        <button ><a href="https://www.blogwiki.in/" target="_blank" rel="noreferrer">Read More..</a></button>
+        <button ><Link to='/BlogPage'>Read More...</Link></button>
         </div>
       </div>
     </div>

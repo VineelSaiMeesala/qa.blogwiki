@@ -1,0 +1,65 @@
+.hero-banner {
+  position: relative;
+  top:-21px;
+  overflow: hidden;
+  width: 100%;
+  height: 480px; /* Adjust the height as needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  box-sizing: border-box;
+}
+
+/* Style the banner content container */
+.hero-content {
+  display: flex;
+  align-items: flex-start; /* Adjust alignment as needed */
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.5s;
+  width: 100%; /* Set the content to full width */
+  position: relative;
+  left: 50%;
+  top: 30%;
+}
+
+/* Style the news details */
+.news-details {
+  flex: 1;
+  padding: 20px; /* Add padding for better readability */
+}
+
+.news-details h1 {
+  font-size: 44px;
+  margin: 0; /* Remove default margin to improve spacing */
+  font-weight: bold; /* Make headlines more prominent */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for readability */
+}
+
+.news-details p{
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for readability */
+}
+/* Style the "Read More" link */
+.read-more {
+  width: 90px;
+  height: 30px;
+  background-color: rgba(21, 51, 106, 0.51);
+  box-sizing: border-box;
+  padding: 3px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+  display: inline-block; /* Prevent the link from extending the width */
+  margin-top: 10px; /* Add space below the text */
+}
+
+/* Hover effect for "Read More" link */
+.read-more:hover {
+  background-color: rgba(21, 51, 106, 1); /* Change color on hover to create emphasis */
+  cursor: pointer; /* Underline on hover for better visibility */
+}

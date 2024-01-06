@@ -1,0 +1,11 @@
+.BpMainWrapper{
+    width: 92.2%;
+    height: 950px;
+    position: relative;
+    left: 100px;
+    top: -1px;
+}
+.BpMainWrapper>img{
+    width: 200px;
+    height: 200px;
+}

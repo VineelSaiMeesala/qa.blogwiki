@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "title": "Breaking News 1",
+      "description": "This is a breaking news story.",
+      "image": "Images/facebook.png"
+    },
+    {
+      "id": 2,
+      "title": "Top Story 2",
+      "description": "Explore the top news story of the day.",
+      "image": "Images/Women2.jpeg"
+    }
+  ]
+  
+  

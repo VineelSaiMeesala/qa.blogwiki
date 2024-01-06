@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "head head head"
+                          "Aside content content"
+                          "footer footer footer";
+    grid-template-rows: 39px;
+}
+.NavigationBar{
+    grid-area: head;
+}
+.Aside{
+    grid-area: Aside;
+    margin-right: 50px;
+}
+.MainContent{
+    grid-area: content;
+}
+.Footer{
+    grid-area: footer;
+}

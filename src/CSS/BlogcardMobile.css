@@ -1,8 +1,6 @@
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
   .BlogCard {
     display: flex;
-    /* display: none; */
     width: 90%;
     flex-wrap: wrap;
     margin: auto;
