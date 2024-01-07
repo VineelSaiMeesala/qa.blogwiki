@@ -103,8 +103,7 @@ const Footer = () => {
         </div>
         <p>All Rights Reserved 2023 | BlogWiki&copy;</p>
         <div className="VersionWrap">
-          {/* Changes this QA in QA build */}
-        {/* <p>Environment: {config("Environment")}</p> */}
+        <p className="FootEnv">Environment: {config("Environment")}</p>
         <p className="Version">Version: {config("Version")}</p>
         </div>
       </div>

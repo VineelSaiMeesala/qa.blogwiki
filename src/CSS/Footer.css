@@ -167,9 +167,11 @@ body {
   cursor: pointer;
 }
 .VersionWrap{
+  width: 70%;
   position: relative;
   right: -64px;
   top: 75px;
+  text-align: center;
 }
 .FErrorMessage{
   color: #4e0303;
@@ -180,5 +182,8 @@ body {
   transform: translate(20px,60px);
 }
 .Version{
+  font-size: small;
+}
+.FootEnv{
   font-size: small;
 }
