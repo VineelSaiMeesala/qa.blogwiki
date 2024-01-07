@@ -6,21 +6,36 @@ import instagram from "../Img/instagram.png";
 import youtube from "../Img/youtube.png";
 import linkedin from "../Img/linkedin.png";
 import { Link } from "react-router-dom";
+import config from "../Config"
+import FeatureFlag from "../FeatureFlag"
+const env = config("Environment")
+console.log(env)
+//Footer section start here
 const Footer = () => {
+  const SubscribeFeature=FeatureFlag("FeatureFlagOn")
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-
-  const handleEmailChange = (e) => {
+  const [errorMessage, setErrorMessage] = useState("");
+  const [thanksMessage, setthanksMessage] = useState("");
+  const FhandleEmailChange = (e) => {
     setEmail(e.target.value);
   };
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const handleSubscribe = () => {
-    // Simulate a subscription process (you should replace this with a real backend call)
-    console.log(`Subscribed with email: ${email}`);
-    setSubscribed(true);
-    setEmail("");
+    if (email.trim() === "") {
+      // If email input is empty, display an error message
+      setErrorMessage("* Please enter a valid email.");
+    } else {
+      // Simulate a subscription process (you should replace this with a real backend call)
+      console.log(`Subscribed with email: ${email}`);
+      setSubscribed(true);
+      setErrorMessage(""); // Clear any previous error message
+      setEmail("")
+      setthanksMessage("Thanks for Subscribe.");
+      
+    }
   };
   return (
     <div className="FooterWrapper">
@@ -31,17 +46,21 @@ const Footer = () => {
         </div>
         <div className="Footline"></div>
       </div>
-      <div className="SearchWrapper">
-        <input
+      {SubscribeFeature && <div className="FNewsLetter">
+      <input
+        className="NewsInput"
           type="email"
           placeholder="Enter your email"
           value={email}
-          onChange={handleEmailChange}
-         required/>
-        <button  className='Subbutton' onClick={handleSubscribe}>
-          {subscribed ? "Subscribed" : "SUBSCRIBE"}
+          onChange={FhandleEmailChange}
+          required={true}
+        />
+        <button className="NewsSubbutton" onClick={handleSubscribe}>
+          {subscribed ? "Subscribed" : "Subscribe"}
         </button>
-      </div>
+        {errorMessage && <p className="FErrorMessage">{errorMessage}</p>}
+        {thanksMessage && <p className="FThanksMessage">{thanksMessage}</p>}
+      </div>}
       <div className="CopyrightWrapper">
         <div className="SocailProfileWrapper">
           <p>Follow US</p>
@@ -83,6 +102,10 @@ const Footer = () => {
           </a>
         </div>
         <p>All Rights Reserved 2023 | BlogWiki&copy;</p>
+        <div className="VersionWrap">
+        <p className="FootEnv">Environment: {config("Environment")}</p>
+        <p className="Version">Version: {config("Version")}</p>
+        </div>
       </div>
       <div className="FooterOptionWrapper">
         <div className="OptionLine1 OptionLine">
@@ -104,7 +127,7 @@ const Footer = () => {
             <Link className="LinkWrapper5" to="/qa.blogwiki">Weather</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper6" to="/qa.blogwiki">Privacy Policy</Link>
+            <Link className="LinkWrapper6" to="/PrivacyPolicy">Privacy Policy</Link>
           </span>
         </div>
         <div className="OptionLine OptionLine1">
