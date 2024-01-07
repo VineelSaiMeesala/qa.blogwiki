@@ -6,6 +6,7 @@ import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import "./index.css";
 import Error from './Pages/Error'
 import BlogPage from './Pages/BlogPage'
+import PrivacyPolicy from './Pages/PrivacyPolicy'
 import App from './App'
 
 const router = createBrowserRouter([
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
     element: <BlogPage />,
     errorElement: <Error />
   },
+  {
+    path: "/PrivacyPolicy", // Root path
+    element: <PrivacyPolicy />,
+    errorElement: <Error />
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
