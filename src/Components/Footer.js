@@ -102,10 +102,10 @@ const Footer = () => {
           </a>
         </div>
         <p>All Rights Reserved 2023 | BlogWiki&copy;</p>
-        <div className="Version">
+        <div className="VersionWrap">
           {/* Changes this QA in QA build */}
         {/* <p>Environment: {config("Environment")}</p> */}
-        <p>Version: {config("Version")}</p>
+        <p className="Version">Version: {config("Version")}</p>
         </div>
       </div>
       <div className="FooterOptionWrapper">
@@ -128,7 +128,7 @@ const Footer = () => {
             <Link className="LinkWrapper5" to="/dev.blogwiki">Weather</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper6" to="/dev.blogwiki">Privacy Policy</Link>
+            <Link className="LinkWrapper6" to="/PrivacyPolicy">Privacy Policy</Link>
           </span>
         </div>
         <div className="OptionLine OptionLine1">

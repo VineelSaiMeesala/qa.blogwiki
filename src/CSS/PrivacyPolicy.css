@@ -1,0 +1,17 @@
+.Policywrap{
+    width: 100%;
+}
+.PrivacyPolicy{
+    text-align: center;
+    padding-top: 50px;
+}
+.linkpolicy{
+    color: black;
+    padding-left: 40px;
+}
+p{
+    padding: 0px 20px;
+}
+h2{
+    padding: 0px 20px;
+}

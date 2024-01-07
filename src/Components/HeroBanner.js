@@ -49,8 +49,8 @@ const HeroBanner = () => {
       {newsData.length > 0 && (
         <div className="hero-content">
           <div className="news-details">
-            <h1>{newsData[currentNews].title}</h1>
-            <p>{newsData[currentNews].description}</p>
+            <h1 className='newsTitle'>{newsData[currentNews].title}</h1>
+            <p className='newsDetails'>{newsData[currentNews].description}</p>
             {/* <a href="/BlogPage" className="read-more">
               Read More
             </a> */}
