@@ -1,5 +1,10 @@
 import "../CSS/NaviWindow.css";
 import "../CSS/NaviMobile.css";
+import facebook from "../Img/facebook.png";
+import twitter from "../Img/twitter (1).png";
+import instagram from "../Img/instagram.png";
+import youtube from "../Img/youtube.png";
+import linkedin from "../Img/linkedin.png";
 import { Link } from "react-router-dom";
 var NavigationBar = function () {
   return (
@@ -34,7 +39,42 @@ var NavigationBar = function () {
           <button className="Login-btn">Login</button>
         </div>
         <div id="Social" className="Social">
-          <p>APP Icons here</p>
+          <a
+            className="NavSocail"
+            target="no_blank"
+            href="https://www.facebook.com/BlogWiki"
+          >
+            <img alt="SocialMedia" src={facebook} />
+          </a>
+          <a
+            className="NavSocail"
+            id="twitter"
+            target="no_blank"
+            href="https://www.twitter.com/BlogWiki_in"
+          >
+            <img alt="SocialMedia" src={twitter} />
+          </a>
+          <a
+            className="NavSocail"
+            target="no_blank"
+            href="https://www.instagram.com/blogwiki.in/"
+          >
+            <img alt="SocialMedia" src={instagram} />
+          </a>
+          <a
+            className="NavSocail"
+            target="no_blank"
+            href="https://www.youtube.com/@BlogWiki_in"
+          >
+            <img alt="SocialMedia" src={youtube} />
+          </a>
+          <a
+            className="NavSocail"
+            target="no_blank"
+            href="https://www.linkedin.com/company/blogwiki/"
+          >
+            <img alt="SocialMedia" src={linkedin} />
+          </a>
         </div>
       </div>
       <div className="MobileNav">
