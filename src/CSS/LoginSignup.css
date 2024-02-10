@@ -1,0 +1,83 @@
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: antiquewhite;
+}
+.WrapperMain >h2{
+    text-align: center;
+  }
+  .FormWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MainWrapper {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(192, 199, 212, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  } 
+  
+   .loginHead {
+    text-align: center;
+  }
+  
+  .EmailWrap,
+  .PasswordWrap,
+  .LoginWrap {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: -11px;
+  }
+  
+  .Emailfield,
+  .Passwordfield {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-left: -11px;
+  }
+  
+  .loginBtn {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  .loginBtn.disabled {
+    background-color: lightblue;
+    color: rgb(134, 126, 126); 
+    cursor: not-allowed;
+  }
+  
+  .loginBtn:not(.disabled):hover {
+    background-color: dodgerblue; 
+    cursor: pointer;
+  }
+  .LoginWrap{
+    text-align: center;
+  }
+  .LoginSignUpWrap{
+    text-align: center;
+  }
+  .LoginSignuplink{
+    color: #007bff;
+  }
+  
+  

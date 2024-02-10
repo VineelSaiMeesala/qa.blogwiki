@@ -55,7 +55,7 @@
   .search {
     position: absolute;
     top: 12px;
-    left: 990px;
+    left: 900px;
   }
   .search > input {
     width: 190px;
@@ -75,9 +75,15 @@
     background-color: transparent;
   }
   .Login {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
     position: absolute;
+    font-weight: bold;
     top: 15px;
-    left: 1200px;
+    left: 1120px;
+    background-color: rgb(82, 82, 212);
   }
   .icon {
     width: 100px;
@@ -86,7 +92,6 @@
   }
   .Social {
     position: absolute;
-    background-color: aliceblue;
     top: 13px;
     left: 1270px;
     width: 160px;

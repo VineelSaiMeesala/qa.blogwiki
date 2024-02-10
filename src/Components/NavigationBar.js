@@ -6,7 +6,9 @@ import instagram from "../Img/instagram.png";
 import youtube from "../Img/youtube.png";
 import linkedin from "../Img/linkedin.png";
 import { Link } from "react-router-dom";
+import FeatureFlag from "../FeatureFlag"
 var NavigationBar = function () {
+  const SubscribeFeature=FeatureFlag("FeatureFlagOn")
   return (
     <div className="Head-Wrapper">
       <div className="Headear">
@@ -18,26 +20,53 @@ var NavigationBar = function () {
       </div>
       <div>
         <div id="menu" className="menu">
-          <span><Link to='/dev.blogwiki'>Home</Link></span>
-          <span><Link to='/BlogPage'>News</Link></span>
-          <span><Link to='/dev.blogwiki'>Tech</Link></span>
-          <span><Link to='/BlogPage'>Gadgets</Link></span>
-          <span><Link to='/dev.blogwiki'>Weather</Link></span>
-          <span><Link to='/BlogPage'>About</Link></span>
-          <span><Link to='/dev.blogwiki'>Contact</Link></span>
-          <span><Link to='/BlogPage'>Services</Link></span>
-          <span><Link to='/BlogPage'>TestLink</Link></span>
+          <span>
+            <Link to="/dev.blogwiki">Home</Link>
+          </span>
+          <span>
+            <Link to="/BlogPage">News</Link>
+          </span>
+          <span>
+            <Link to="/dev.blogwiki">Tech</Link>
+          </span>
+          <span>
+            <Link to="/BlogPage">Gadgets</Link>
+          </span>
+          <span>
+            <Link to="/dev.blogwiki">Weather</Link>
+          </span>
+          <span>
+            <Link to="/BlogPage">About</Link>
+          </span>
+          <span>
+            <Link to="/dev.blogwiki">Contact</Link>
+          </span>
+          <span>
+            <Link to="/BlogPage">Services</Link>
+          </span>
+          <span>
+            <Link to="/BlogPage">TestLink</Link>
+          </span>
         </div>
         <div className="search">
-          <input
+          <input id="search" list="search"
             className="searchinput"
             type="search"
             placeholder="  Search...."
           />
+          <datalist id="search">
+            <option value="Edge" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
         </div>
-        <div id="Login" className="Login">
-          <button className="Login-btn">Login</button>
-        </div>
+        {SubscribeFeature && <div id="Login" className="Login">
+        <Link to="/loginsignup" className="Login-btn">
+            Login/Signup
+          </Link>
+        </div>}
         <div id="Social" className="Social">
           <a
             className="NavSocail"
