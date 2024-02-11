@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
 import "../CSS/LoginSignup.css";
+import { Link } from "react-router-dom";
 import { app } from "../Fileconfigsettings/firebaseconfig";
 import {
   getAuth,
@@ -19,23 +20,30 @@ function App() {
   });
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const handleInputs = (event) => {
     let inputs = { [event.target.name]: event.target.value };
 
     setData({ ...data, ...inputs });
   };
+
   const isLoginDisabled = !data.email || !data.password;
-  const signIn = () => {
-    signInWithEmailAndPassword(auth, data.email, data.password)
-    .catch(error => {
-      // Handle errors here
-      alert(error.message);
-    });
+
+  const signIn = async () => {
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password)
+    } 
+    catch (error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorCode);
+    }
   };
 
   const handlelogout = () => {
     signOut(auth);
   };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -54,6 +62,7 @@ function App() {
       unsubscribe();
     };
   }, [auth]);
+
   return (
     <div className="WrapperMain">
       <NavigationBar />
@@ -84,21 +93,25 @@ function App() {
             </div>
           </form>
           <div className="LoginWrap">
-          <button onClick={signIn} className={`loginBtn ${isLoginDisabled ? 'disabled' : ''}`} disabled={isLoginDisabled}>
-            LOGIN
-          </button>
-          <button onClick={handlelogout} className={`loginBtn ${isLoginDisabled ? 'disabled' : ''}`} disabled={isLoginDisabled}>
-            LogOut
-          </button>
+              <button
+                onClick={signIn}
+                className={`loginBtn ${isLoginDisabled ? "disabled" : ""}`}
+                disabled={isLoginDisabled}
+              >
+                LOGIN
+              </button>
+              <button onClick={handlelogout} className="loginBtn">
+                LOGOUT
+              </button>
           </div>
           <div className="LoginSignUpWrap">
-              <p>
-                Don't have an account?{" "}
-                <a className="LoginSignuplink" href="www.blogwiki.in">
-                  SignUp
-                </a>
-              </p>
-            </div>
+            <p>
+              Don't have an account?{" "}
+              <Link className="LoginSignuplink" to="/Signup">
+                SignUp
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

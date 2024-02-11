@@ -7,6 +7,7 @@ import Error from './Error'
 import BlogPage from './Pages/BlogPage'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
 import LoginSignup from "./Pages/LoginPage";
+import Signup from './Pages/Signup'
 const router = createBrowserRouter([
   {
     path: "/", // Root path
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
   {
     path: "/LoginSignup", // Root path
     element: <LoginSignup />,
+    errorElement: <Error />
+  },
+  {
+    path: "/Signup", // Root path
+    element: <Signup />,
     errorElement: <Error />
   }
 ])
