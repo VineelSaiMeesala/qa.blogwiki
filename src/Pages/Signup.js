@@ -183,10 +183,10 @@ function App() {
             {passwordError && <p className="error">{passwordError}</p>}
           </form>
           <div className="LoginWrap">
-            <button onClick={handleSignUp} className={`loginBtn ${isSignUpDisabled ? 'disabled' : ''}`} disabled={isSignUpDisabled}>
+            {!isLoggedIn && <button onClick={handleSignUp} className={`loginBtn ${isSignUpDisabled ? 'disabled' : ''}`} disabled={isSignUpDisabled}>
               SIGNUP
-            </button>
-          <button onClick={handlelogout} className={`loginBtn`}>LOGOUT</button>
+            </button>}
+          {isLoggedIn && <button onClick={handlelogout} className={`loginBtn`}>LOGOUT</button>}
           </div>
           <div className="LoginSignUpWrap">
             <p>

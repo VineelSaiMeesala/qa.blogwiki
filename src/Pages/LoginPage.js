@@ -93,16 +93,16 @@ function App() {
             </div>
           </form>
           <div className="LoginWrap">
-              <button
+              {!isLoggedIn && <button
                 onClick={signIn}
                 className={`loginBtn ${isLoginDisabled ? "disabled" : ""}`}
                 disabled={isLoginDisabled}
               >
                 LOGIN
-              </button>
-              <button onClick={handlelogout} className="loginBtn">
+              </button>}
+              {isLoggedIn && <button onClick={handlelogout} className="loginBtn">
                 LOGOUT
-              </button>
+              </button>}
           </div>
           <div className="LoginSignUpWrap">
             <p>
