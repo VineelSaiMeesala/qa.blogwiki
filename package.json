@@ -17,7 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy-dev": "gh-pages -d build -b main -r origin -u https://vineelsaimeesala.github.io/dev.blogwiki/",
+    "deploy-qa": "gh-pages -d build -b main -r origin -u https://vineelsaimeesala.github.io/qa.blogwiki/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
