@@ -1,5 +1,56 @@
-.aside-content{
-  width: 300px;
-  height: 100%;
-  background-color: aqua;
+:root{
+  --background-color: aqua;
+  --Mainheight: 97.8%;
+  --FontColor:white;
+}
+.Asideleft{
+  height: var(--Mainheight);
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  position: relative;
+  top:41px;
+}
+.AdSBox{
+  width: 95%;
+  display: flex;
+  height: 360px;
+  background-color: black;
+  position: relative;
+  top: 5px;
+  margin: auto;
+  border-radius: 10px;
+  color: var(--FontColor);
+  align-items: center;
+  justify-content: center;
+}
+.NewsLetter{
+  width: 95%;
+  height: 42px;
+  /* background-color: black; */
+  margin: auto;
+  position: relative;
+  top: 15px;
+}
+.NewsInput{
+  height: 40px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+}
+.NewsSubbutton{
+  height: 41px;
+  width: 25%;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.ErrorMessage{
+  color: black;
+  text-shadow: 2px 2px 4px red;
+  font-weight: 500;
+}
+.ThanksMessage{
+  font-weight: 500;
+  text-shadow: 2px 2px 4px green;
 }

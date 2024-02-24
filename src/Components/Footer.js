@@ -23,18 +23,27 @@ const Footer = () => {
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const isValidEmail = (email) => {
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
   const handleSubscribe = () => {
     if (email.trim() === "") {
       // If email input is empty, display an error message
       setErrorMessage("* Please enter a valid email.");
+      setthanksMessage(""); // Clear any previous thanks message
+    } else if (!isValidEmail(email)) {
+      // If the entered email is invalid, display an error message
+      setErrorMessage("* Please enter a valid email format.");
+      setthanksMessage(""); // Clear any previous thanks message
     } else {
       // Simulate a subscription process (you should replace this with a real backend call)
       console.log(`Subscribed with email: ${email}`);
       setSubscribed(true);
       setErrorMessage(""); // Clear any previous error message
-      setEmail("")
+      setEmail("");
       setthanksMessage("Thanks for Subscribe.");
-      
     }
   };
   return (
@@ -56,7 +65,7 @@ const Footer = () => {
           required={true}
         />
         <button className="NewsSubbutton" onClick={handleSubscribe}>
-          {subscribed ? "Subscribed" : "Subscribe"}
+          {subscribed ? "Subscribe" : "Subscribe"}
         </button>
         {errorMessage && <p className="FErrorMessage">{errorMessage}</p>}
         {thanksMessage && <p className="FThanksMessage">{thanksMessage}</p>}
