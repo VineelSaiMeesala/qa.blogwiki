@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     errorElement: <Error />
   },
   {
-    path: "/dev.blogwiki", // Root path
+    path: "/qa.blogwiki", // Root path
     element: <App />,
     errorElement: <Error />
   },

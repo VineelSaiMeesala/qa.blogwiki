@@ -119,21 +119,21 @@ const Footer = () => {
       <div className="FooterOptionWrapper">
         <div className="OptionLine1 OptionLine">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper1" to="/dev.blogwiki">Home</Link>
+            <Link className="LinkWrapper1" to="/qa.blogwiki">Home</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper2" to="/dev.blogwiki">Gadgets</Link>
+            <Link className="LinkWrapper2" to="/qa.blogwiki">Gadgets</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper3" to="/dev.blogwiki">Advertise</Link>
+            <Link className="LinkWrapper3" to="/qa.blogwiki">Advertise</Link>
           </span>
         </div>
         <div className="OptionLine2 OptionLine">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper4" to="/dev.blogwiki">News</Link>
+            <Link className="LinkWrapper4" to="/qa.blogwiki">News</Link>
           </span>
           <span className="OptioninnerWrapper ">
-            <Link className="LinkWrapper5" to="/dev.blogwiki">Weather</Link>
+            <Link className="LinkWrapper5" to="/qa.blogwiki">Weather</Link>
           </span>
           <span className="OptioninnerWrapper">
             <Link className="LinkWrapper6" to="/PrivacyPolicy">Privacy Policy</Link>
@@ -141,13 +141,13 @@ const Footer = () => {
         </div>
         <div className="OptionLine OptionLine1">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper7" to="/dev.blogwiki">Tech</Link>
+            <Link className="LinkWrapper7" to="/qa.blogwiki">Tech</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper8" to="/dev.blogwiki">About</Link>
+            <Link className="LinkWrapper8" to="/qa.blogwiki">About</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper9" to="/dev.blogwiki">Contact</Link>
+            <Link className="LinkWrapper9" to="/qa.blogwiki">Contact</Link>
           </span>
         </div>
       </div>

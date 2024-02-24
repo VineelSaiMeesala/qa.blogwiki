@@ -21,25 +21,25 @@ var NavigationBar = function () {
       <div>
         <div id="menu" className="menu">
           <span>
-            <Link to="/dev.blogwiki">Home</Link>
+            <Link to="/qa.blogwiki">Home</Link>
           </span>
           <span>
             <Link to="/BlogPage">News</Link>
           </span>
           <span>
-            <Link to="/dev.blogwiki">Tech</Link>
+            <Link to="/qa.blogwiki">Tech</Link>
           </span>
           <span>
             <Link to="/BlogPage">Gadgets</Link>
           </span>
           <span>
-            <Link to="/dev.blogwiki">Weather</Link>
+            <Link to="/qa.blogwiki">Weather</Link>
           </span>
           <span>
             <Link to="/BlogPage">About</Link>
           </span>
           <span>
-            <Link to="/dev.blogwiki">Contact</Link>
+            <Link to="/qa.blogwiki">Contact</Link>
           </span>
           <span>
             <Link to="/BlogPage">Services</Link>
