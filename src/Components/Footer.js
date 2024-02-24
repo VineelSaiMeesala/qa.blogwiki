@@ -23,18 +23,27 @@ const Footer = () => {
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const isValidEmail = (email) => {
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
   const handleSubscribe = () => {
     if (email.trim() === "") {
       // If email input is empty, display an error message
       setErrorMessage("* Please enter a valid email.");
+      setthanksMessage(""); // Clear any previous thanks message
+    } else if (!isValidEmail(email)) {
+      // If the entered email is invalid, display an error message
+      setErrorMessage("* Please enter a valid email format.");
+      setthanksMessage(""); // Clear any previous thanks message
     } else {
       // Simulate a subscription process (you should replace this with a real backend call)
       console.log(`Subscribed with email: ${email}`);
       setSubscribed(true);
       setErrorMessage(""); // Clear any previous error message
-      setEmail("")
+      setEmail("");
       setthanksMessage("Thanks for Subscribe.");
-      
     }
   };
   return (
@@ -56,7 +65,7 @@ const Footer = () => {
           required={true}
         />
         <button className="NewsSubbutton" onClick={handleSubscribe}>
-          {subscribed ? "Subscribed" : "Subscribe"}
+          {subscribed ? "Subscribe" : "Subscribe"}
         </button>
         {errorMessage && <p className="FErrorMessage">{errorMessage}</p>}
         {thanksMessage && <p className="FThanksMessage">{thanksMessage}</p>}
@@ -110,21 +119,21 @@ const Footer = () => {
       <div className="FooterOptionWrapper">
         <div className="OptionLine1 OptionLine">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper1" to="/qa.blogwiki">Home</Link>
+            <Link className="LinkWrapper1" to="/dev.blogwiki">Home</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper2" to="/qa.blogwiki">Gadgets</Link>
+            <Link className="LinkWrapper2" to="/dev.blogwiki">Gadgets</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper3" to="/qa.blogwiki">Advertise</Link>
+            <Link className="LinkWrapper3" to="/dev.blogwiki">Advertise</Link>
           </span>
         </div>
         <div className="OptionLine2 OptionLine">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper4" to="/qa.blogwiki">News</Link>
+            <Link className="LinkWrapper4" to="/dev.blogwiki">News</Link>
           </span>
           <span className="OptioninnerWrapper ">
-            <Link className="LinkWrapper5" to="/qa.blogwiki">Weather</Link>
+            <Link className="LinkWrapper5" to="/dev.blogwiki">Weather</Link>
           </span>
           <span className="OptioninnerWrapper">
             <Link className="LinkWrapper6" to="/PrivacyPolicy">Privacy Policy</Link>
@@ -132,13 +141,13 @@ const Footer = () => {
         </div>
         <div className="OptionLine OptionLine1">
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper7" to="/qa.blogwiki">Tech</Link>
+            <Link className="LinkWrapper7" to="/dev.blogwiki">Tech</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper8" to="/qa.blogwiki">About</Link>
+            <Link className="LinkWrapper8" to="/dev.blogwiki">About</Link>
           </span>
           <span className="OptioninnerWrapper">
-            <Link className="LinkWrapper9" to="/qa.blogwiki">Contact</Link>
+            <Link className="LinkWrapper9" to="/dev.blogwiki">Contact</Link>
           </span>
         </div>
       </div>

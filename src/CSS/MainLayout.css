@@ -1,18 +1,21 @@
+.body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 .container{
     display: grid;
-    grid-template-columns: 200px auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto 360px;
     grid-template-areas: "head head head"
-                          "Aside content content"
+                          "content content Aside"
                           "footer footer footer";
-    grid-template-rows: 39px;
+    grid-template-rows: 15px;
 }
 .NavigationBar{
     grid-area: head;
 }
 .Aside{
     grid-area: Aside;
-    margin-right: 50px;
 }
 .MainContent{
     grid-area: content;

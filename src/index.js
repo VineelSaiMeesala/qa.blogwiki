@@ -1,27 +1,27 @@
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import React from "react";
 import "./index.css";
-import Error from './Pages/Error'
+import App from "./App";
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Error from './Error'
 import BlogPage from './Pages/BlogPage'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
-import App from './App'
-
+import LoginSignup from "./Pages/LoginPage";
+import Signup from './Pages/Signup'
+import RestrictedContent from './Pages/TestPage'
 const router = createBrowserRouter([
   {
-    path: "/qa.blogwiki",
+    path: "/", // Root path
     element: <App />,
     errorElement: <Error />
   },
   {
-    path: "/",
+    path: "/dev.blogwiki", // Root path
     element: <App />,
     errorElement: <Error />
   },
   {
-    path: "/BlogPage",
+    path: "/BlogPage", // Root path
     element: <BlogPage />,
     errorElement: <Error />
   },
@@ -29,17 +29,25 @@ const router = createBrowserRouter([
     path: "/PrivacyPolicy", // Root path
     element: <PrivacyPolicy />,
     errorElement: <Error />
+  },
+  {
+    path: "/LoginSignup", // Root path
+    element: <LoginSignup />,
+    errorElement: <Error />
+  },
+  {
+    path: "/Signup", // Root path
+    element: <Signup />,
+    errorElement: <Error />
+  },
+  {
+    path: "/TestPage", // Root path
+    element: <RestrictedContent />,
+    errorElement: <Error />
   }
-]);
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+])
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-// reportWebVitals(console.log);

@@ -66,7 +66,10 @@
   }
   .Social {
     display: none;
-    transform: translate(9rem, -15rem);
+    /* transform: translate(9rem, -15rem); */
+  }
+  .NavSocail{
+    display: none;
   }
   .DarkModeWrapper {
     display: none;

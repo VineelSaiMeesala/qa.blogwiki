@@ -1,0 +1,33 @@
+.ErrorMessagetest {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  margin-top: 22%;
+}
+.Loading {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-top: 20%;
+  margin-left: 45%;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation-name: onoff;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes onoff {
+from {
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+.LoadImg {
+  width: 100%;
+}
