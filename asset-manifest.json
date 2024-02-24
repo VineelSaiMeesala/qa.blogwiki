@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/qa.blogwiki/static/css/main.610f3902.css",
-    "main.js": "/qa.blogwiki/static/js/main.386cbb1e.js",
-    "static/js/787.3fc59345.chunk.js": "/qa.blogwiki/static/js/787.3fc59345.chunk.js",
+    "main.css": "/qa.blogwiki/static/css/main.0c55fc13.css",
+    "main.js": "/qa.blogwiki/static/js/main.bf7837e6.js",
     "static/media/Women16.jpeg": "/qa.blogwiki/static/media/Women16.2f77178e1b2c648f8e41.jpeg",
     "static/media/Women17.jpeg": "/qa.blogwiki/static/media/Women17.59d2357a96459d30b6ba.jpeg",
     "static/media/Women2.jpeg": "/qa.blogwiki/static/media/Women2.79f9553da69879c49b31.jpeg",
@@ -11,16 +10,16 @@
     "static/media/Women12.jpeg": "/qa.blogwiki/static/media/Women12.9c42bfb07b9dfc5c73a3.jpeg",
     "static/media/Women32.jpeg": "/qa.blogwiki/static/media/Women32.94b1790cf39156b2ea9b.jpeg",
     "static/media/instagram.png": "/qa.blogwiki/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/LogoTest.png": "/qa.blogwiki/static/media/LogoTest.4aa35f1bb67edb5c7204.png",
     "static/media/twitter (1).png": "/qa.blogwiki/static/media/twitter (1).e58e4997ef85cbd7054c.png",
     "static/media/youtube.png": "/qa.blogwiki/static/media/youtube.bc069a2b5e1ecdb5e06e.png",
     "static/media/linkedin.png": "/qa.blogwiki/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/qa.blogwiki/index.html",
-    "main.610f3902.css.map": "/qa.blogwiki/static/css/main.610f3902.css.map",
-    "main.386cbb1e.js.map": "/qa.blogwiki/static/js/main.386cbb1e.js.map",
-    "787.3fc59345.chunk.js.map": "/qa.blogwiki/static/js/787.3fc59345.chunk.js.map"
+    "main.0c55fc13.css.map": "/qa.blogwiki/static/css/main.0c55fc13.css.map",
+    "main.bf7837e6.js.map": "/qa.blogwiki/static/js/main.bf7837e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.610f3902.css",
-    "static/js/main.386cbb1e.js"
+    "static/css/main.0c55fc13.css",
+    "static/js/main.bf7837e6.js"
   ]
 }
